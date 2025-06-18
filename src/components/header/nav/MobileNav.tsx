@@ -14,7 +14,7 @@ const MobileNav = () => {
   return (
     <div className="block lg:hidden">
       <Sheet>
-        <SheetTrigger>
+        <SheetTrigger className="flex items-center">
           <AlignRight className="text-primary" />
         </SheetTrigger>
         <SheetContent>
