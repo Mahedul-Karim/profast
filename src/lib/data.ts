@@ -43,3 +43,12 @@ export const HOW_IT_WORKS = [
     src: "/assets/bookingIcon.png",
   },
 ];
+
+export const TRSUTED=[
+  '/assets/brands/casio.png',
+  '/assets/brands/amazon_vector.png',
+  '/assets/brands/moonstar.png',
+  '/assets/brands/start.png',
+  '/assets/brands/start-people 1.png',
+  '/assets/brands/randstad.png',
+]
