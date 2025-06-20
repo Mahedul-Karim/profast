@@ -1,16 +1,32 @@
+import ArrowButton from "@/components/common/ArrowButton";
+import SheetCloseWrapper from "@/components/common/SheetCloseWrapper";
 import { Button } from "@/components/ui/button";
-import { ArrowUpRight } from "lucide-react";
 import React from "react";
 
-const NavActions = ({ className = "" }: { className?: string }) => {
+const NavActions = ({
+  className = "",
+  closeOnClick = false,
+}: {
+  className?: string;
+  closeOnClick?: boolean;
+}) => {
   return (
     <div className={`${className} flex items-center gap-2`}>
-      <Button variant="outline" className="bg-transparent border-border h-10 text-muted font-semibold">Sign In</Button>
-      <div className="flex items-center">
-        <Button className="h-10 text-dark font-semibold">Be a rider</Button>
-        <Button className="rounded-full bg-dark text-primary size-10 px-0 py-0 has-[>svg]:px-0 hover:bg-dark">
-          <ArrowUpRight className="size-7" />
+      <SheetCloseWrapper closeOnClick={closeOnClick}>
+        <Button
+          variant="outline"
+          className="bg-transparent border-border h-10 text-muted font-semibold grow lg:grow-0"
+        >
+          Sign In
         </Button>
+      </SheetCloseWrapper>
+      <div className="flex items-center">
+        <SheetCloseWrapper closeOnClick={closeOnClick}>
+          <Button className="h-10 text-dark font-semibold grow lg:grow-0">
+            Be a rider
+          </Button>
+        </SheetCloseWrapper>
+        <ArrowButton href="/" />
       </div>
     </div>
   );

@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import { Urbanist } from "next/font/google";
 import "./globals.css";
+import ReduxProvider from "@/provider/ReduxProvider";
 
-
-const urbanist= Urbanist({
-  subsets:['latin'],
+const urbanist = Urbanist({
+  subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   style: ["normal", "italic"],
-})
+});
 
 export const metadata: Metadata = {
   title: "ProFast",
@@ -21,10 +21,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${urbanist.className} bg-background`}
-      >
-        {children}
+      <body className={`${urbanist.className} bg-background`}>
+        <ReduxProvider>{children}</ReduxProvider>
       </body>
     </html>
   );

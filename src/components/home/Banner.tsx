@@ -11,7 +11,7 @@ import Autoplay from "embla-carousel-autoplay";
 
 const Banner = () => {
   return (
-    <Container className="mt-12 relative">
+    <Container className="mt-4 relative">
       <Carousel
         className="w-full"
         opts={{ loop: true }}
