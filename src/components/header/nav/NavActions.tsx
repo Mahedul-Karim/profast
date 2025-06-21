@@ -1,6 +1,7 @@
 import ArrowButton from "@/components/common/ArrowButton";
 import SheetCloseWrapper from "@/components/common/SheetCloseWrapper";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 import React from "react";
 
 const NavActions = ({
@@ -16,8 +17,9 @@ const NavActions = ({
         <Button
           variant="outline"
           className="bg-transparent border-border h-10 text-muted font-semibold grow lg:grow-0"
+          asChild
         >
-          Sign In
+          <Link href={"/sign-in"}>Sign In</Link>
         </Button>
       </SheetCloseWrapper>
       <div className="flex items-center">
