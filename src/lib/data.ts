@@ -1,23 +1,23 @@
 export const NAV_DATA = [
   {
     label: "Services",
-    to: "",
+    to: "/services",
   },
   {
     label: "Coverage",
-    to: "",
+    to: "/coverage",
   },
   {
     label: "About Us",
-    to: "",
+    to: "/about-us",
   },
   {
     label: "Pricing",
-    to: "",
+    to: "/pricing",
   },
   {
     label: "Be a Rider",
-    to: "",
+    to: "/be-a-rider",
   },
 ];
 
@@ -71,8 +71,7 @@ export const HOME_ABOUT = [
   },
 ];
 
-
-export const REVIEWS=[
+export const REVIEWS = [
   {
     id: "5f47ac10b4f1c03e8c123456",
     user_email: "john.doe@example.com",
@@ -83,7 +82,7 @@ export const REVIEWS=[
     parcel_id: "5f47ac10b4f1c03e8c654321",
     pick_up_email: "pickup1@example.com",
     user_photoURL: "https://randomuser.me/api/portraits/men/10.jpg",
-    date: "2024-05-08T14:30:00.000Z"
+    date: "2024-05-08T14:30:00.000Z",
   },
   {
     id: "5f47ac10b4f1c03e8c234567",
@@ -95,7 +94,7 @@ export const REVIEWS=[
     parcel_id: "5f47ac10b4f1c03e8c765432",
     pick_up_email: "pickup2@example.com",
     user_photoURL: "https://randomuser.me/api/portraits/women/25.jpg",
-    date: "2024-06-10T10:15:00.000Z"
+    date: "2024-06-10T10:15:00.000Z",
   },
   {
     id: "5f47ac10b4f1c03e8c345678",
@@ -107,7 +106,7 @@ export const REVIEWS=[
     parcel_id: "5f47ac10b4f1c03e8c876543",
     pick_up_email: "pickup3@example.com",
     user_photoURL: "https://randomuser.me/api/portraits/men/34.jpg",
-    date: "2024-07-01T08:50:00.000Z"
+    date: "2024-07-01T08:50:00.000Z",
   },
   {
     id: "5f47ac10b4f1c03e8c456789",
@@ -119,7 +118,7 @@ export const REVIEWS=[
     parcel_id: "5f47ac10b4f1c03e8c987654",
     pick_up_email: "pickup4@example.com",
     user_photoURL: "https://randomuser.me/api/portraits/women/12.jpg",
-    date: "2024-07-15T09:10:00.000Z"
+    date: "2024-07-15T09:10:00.000Z",
   },
   {
     id: "5f47ac10b4f1c03e8c567890",
@@ -131,7 +130,7 @@ export const REVIEWS=[
     parcel_id: "5f47ac10b4f1c03e8c098765",
     pick_up_email: "pickup5@example.com",
     user_photoURL: "https://randomuser.me/api/portraits/men/19.jpg",
-    date: "2024-08-02T16:45:00.000Z"
+    date: "2024-08-02T16:45:00.000Z",
   },
   {
     id: "5f47ac10b4f1c03e8c678901",
@@ -143,7 +142,7 @@ export const REVIEWS=[
     parcel_id: "5f47ac10b4f1c03e8c109876",
     pick_up_email: "pickup6@example.com",
     user_photoURL: "https://randomuser.me/api/portraits/women/8.jpg",
-    date: "2024-08-10T12:00:00.000Z"
+    date: "2024-08-10T12:00:00.000Z",
   },
   {
     id: "5f47ac10b4f1c03e8c789012",
@@ -155,7 +154,7 @@ export const REVIEWS=[
     parcel_id: "5f47ac10b4f1c03e8c210987",
     pick_up_email: "pickup7@example.com",
     user_photoURL: "https://randomuser.me/api/portraits/men/22.jpg",
-    date: "2024-08-14T18:20:00.000Z"
+    date: "2024-08-14T18:20:00.000Z",
   },
   {
     id: "5f47ac10b4f1c03e8c890123",
@@ -167,6 +166,34 @@ export const REVIEWS=[
     parcel_id: "5f47ac10b4f1c03e8c321098",
     pick_up_email: "pickup8@example.com",
     user_photoURL: "https://randomuser.me/api/portraits/women/5.jpg",
-    date: "2024-08-20T07:30:00.000Z"
-  }
-]
+    date: "2024-08-20T07:30:00.000Z",
+  },
+];
+
+export const faqs = [
+  {
+    question: "How do I book a parcel for delivery with ProFast?",
+    answer:
+      "You can book a parcel by signing into your ProFast account, clicking on 'Send Parcel', filling in the delivery details, and confirming the booking.",
+  },
+  {
+    question: "How can I track my parcel?",
+    answer:
+      "Once your parcel is dispatched, you'll receive a tracking ID. Enter this ID in the 'Track Parcel' section to view the live status of your delivery.",
+  },
+  {
+    question: "What items are restricted from shipping?",
+    answer:
+      "We do not allow the shipment of hazardous materials, flammable liquids, perishable foods, or illegal substances. Please refer to our Shipping Policy for the full list.",
+  },
+  {
+    question: "What should I do if my parcel is delayed?",
+    answer:
+      "Delays can happen due to unforeseen circumstances. You can contact our support team through the Help Center if your parcel hasn't moved in 48 hours.",
+  },
+  {
+    question: "Does ProFast offer same-day delivery?",
+    answer:
+      "Yes, same-day delivery is available in select cities for parcels booked before 12 PM. Check availability in your area during the booking process.",
+  },
+];

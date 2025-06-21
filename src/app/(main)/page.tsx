@@ -1,5 +1,6 @@
 import AboutUs from "@/components/home/AboutUs";
 import Banner from "@/components/home/Banner";
+import FAQ from "@/components/home/FAQ";
 import HowItWorks from "@/components/home/HowItWorks";
 import Merchant from "@/components/home/Merchant";
 import OurServices from "@/components/home/OurServices";
@@ -16,6 +17,7 @@ export default function Home() {
       <AboutUs />
       <Merchant />
       <Testimonials />
+      <FAQ />
     </>
   );
 }
